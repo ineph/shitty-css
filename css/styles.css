@@ -16,8 +16,11 @@ body {
     color: white;
 }
 
-li:first-child {
+li:first-child:hover {
     color: var(--dark-aqua);
+    text-emphasis:  '点' var(--gay);
+    text-transform: capitalize;
+    font-size: 5px;
 }
 
 li:nth-child(7) {
@@ -32,4 +35,30 @@ li:nth-child(4) {
 
 li:last-child {
     text-align: end;
+}
+
+.fallow-me + p + p{
+    background-color: bisque;
+    color: black;
+}
+
+input ~ button {
+    color: var(--gay);
+    font-size: large;
+}
+
+.div-two{
+    background-color: var(--gay);
+}
+
+img[src*="./img"] {
+    border: 10px solid black;
+}
+
+img[src$=".gif"]{
+    filter: saturate(7);
+}
+
+img[src*="./img"]:hover {
+    transform: scaleX(-1);
 }
