@@ -1,8 +1,35 @@
+:root {
+    --dark-aqua: #2d635d;
+    --gay: #af82b5;
+}
+
 body {
     color: aquamarine;
     background-color: #2b271f;
 }
 
 .quote {
-background-color: #362f23;
+    background-color: #362f23;
+}
+
+.quote:hover {
+    color: white;
+}
+
+li:first-child {
+    color: var(--dark-aqua);
+}
+
+li:nth-child(7) {
+    color: var(--gay);
+}
+
+li:nth-child(4) {
+    color: black;
+    background-color: aqua;
+    text-decoration: dashed;
+}
+
+li:last-child {
+    text-align: end;
 }
