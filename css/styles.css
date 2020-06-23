@@ -16,6 +16,7 @@ body {
     color: white;
 }
 
+
 li:first-child:hover {
     color: var(--dark-aqua);
     text-emphasis:  '点' var(--gay);
@@ -58,7 +59,30 @@ img[src*="./img"] {
 img[src$=".gif"]{
     filter: saturate(7);
 }
-
+/* search more: attribute selector */
 img[src*="./img"]:hover {
     transform: scaleX(-1);
+}
+
+#corey-gif {
+    height: 300px;
+    width: 42%;
+    background: url("../img/c_spoon.gif");
+    border: 20px solid;
+    border-image: url("..img/lava.jpg") 60 30;
+}
+
+.test-box {
+    font-size: 40px;
+    background-image: linear-gradient(to bottom, black, red);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: red;
+    width: 400px;
+    height: 300px;
+    border: solid;
+    border-width: 25px;
+    border-image: url("../img/lava.jpg") 60 30;
+    border-image-slice: fill;
 }
