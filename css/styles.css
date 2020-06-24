@@ -3,9 +3,16 @@
     --gay: #af82b5;
 }
 
+@font-face {
+    font-family: 'moonlight';
+    src: url("../fonts/Moon_Light.otf");
+}
+
 body {
     color: aquamarine;
     background-color: #2b271f;
+    font-family:  'moonlight', Verdana, Tahoma;
+    text-align: justify;
 }
 
 .quote {
@@ -68,14 +75,14 @@ img[src*="./img"]:hover {
     height: 300px;
     width: 42%;
     background: url("../img/c_spoon.gif");
-    border: 20px solid;
-    border-image: url("..img/lava.jpg") 60 30;
 }
 
-.test-box {
+.lava-box {
     font-size: 40px;
+    font-weight: 80;
     background-image: linear-gradient(to bottom, black, red);
     align-items: center;
+    /* text-align: justify; */
     justify-content: center;
     display: flex;
     color: red;
@@ -85,4 +92,11 @@ img[src*="./img"]:hover {
     border-width: 25px;
     border-image: url("../img/lava.jpg") 60 30;
     border-image-slice: fill;
+}
+
+.div-size {
+    background-color: black;
+    height: 50vh;
+    width: 50vw;
+    text-decoration: overline underline;
 }
